@@ -58,7 +58,7 @@ func findFiles(dir string, patterns []string) map[string]os.FileInfo {
 		}
 
 		if info.IsDir() {
-			if strings.HasPrefix(info.Name(), ".") {
+			if info.Name() != "." && strings.HasPrefix(info.Name(), ".") {
 				// log.Printf("skipping dir: %s, %s", path, info.Name())
 				return filepath.SkipDir
 			}
