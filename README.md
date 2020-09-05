@@ -12,7 +12,7 @@ statwatch will find all files under the named directory that match any of the
 patterns, and will then check every 500 milliseconds (2x per second) to see if
 anything was modified. If/when any file is modified, the program will exit.
 
-statwatch will skip any directory named like '.*' (other than ., the current
+statwatch will skip any directory named like `.*` (other than `.`, the current
 directly).
 
 Example script:
